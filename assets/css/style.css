@@ -1,0 +1,13 @@
+#navbarAll{color: black; background-color: #595959; z-index: 1;}
+#navbarBurgrBtn{border-color: #cfd11a; background-color: #595959;}
+#navbarBurgrBtn:hover{border-color: #FFF; background-color: #FFF;}
+#navbarLogo{color: #cfd11a;}
+#navbarLogo:hover{color: #FFF;}
+#navbarLink{color: #000; text-decoration: none;}
+#navbarLink:hover{color: #FFF; text-decoration: none;}
+#navbarSearchBtn{color: #cfd11a; border-color: #cfd11a;}
+#navbarSearchBtn:hover{background-color: #FFF;}
+#navbarSearchBtn:focus, #navbarSearchBtn:active{outline: none; box-shadow: none;}
+#navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
+#navbarModalBtn:hover{background-color: #FFF;}
+#navbarModal{}
