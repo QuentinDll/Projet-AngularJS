@@ -1,4 +1,4 @@
-#navbarAll{color: black; background-color: #595959; z-index: 1;}
+#navbarAll{color: black; background-color: #595959;}
 #navbarBurgrBtn{border-color: #cfd11a; background-color: #595959;}
 #navbarBurgrBtn:hover{border-color: #FFF; background-color: #FFF;}
 #navbarLogo{color: #cfd11a;}
@@ -7,7 +7,10 @@
 #navbarLink:hover{color: #FFF; text-decoration: none;}
 #navbarSearchBtn{color: #cfd11a; border-color: #cfd11a;}
 #navbarSearchBtn:hover{background-color: #FFF;}
-#navbarSearchBtn:focus, #navbarSearchBtn:active{outline: none; box-shadow: none;}
-#navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
+#navbarModalBtn{color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
 #navbarModalBtn:hover{background-color: #FFF;}
 #navbarModal{}
+.card{
+  float: left;
+  height: 40rem;
+}
