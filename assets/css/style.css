@@ -11,3 +11,8 @@
 #navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
 #navbarModalBtn:hover{background-color: #FFF;}
 #navbarModal{}
+footer{background-color: #808f85;}
+footer h3{color: #cfd11a; padding-left: 9%}
+footer li, a{list-style: none; font-size: 20px; color: #f2e9dc;}
+i{align-items: center; font-size: 40px; margin-left: auto;}
+.footer-copyright{background-color: #5e6961;}
