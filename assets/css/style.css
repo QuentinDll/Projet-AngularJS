@@ -1,5 +1,7 @@
+body{padding-top: 80px;}
 #navbarAll{color: black; background-color: #595959;}
-#navbarBurgrBtn{border-color: #cfd11a; background-color: #595959;}
+@media only screen and (max-width: 768px){[class*="col-"]{width: 100%;}}
+#navbarBurgrBtn{text-align: center; border-color: #cfd11a; background-color: #595959;}
 #navbarBurgrBtn:hover{border-color: #FFF; background-color: #FFF;}
 #navbarLogo{color: #cfd11a;}
 #navbarLogo:hover{color: #FFF;}
@@ -7,10 +9,9 @@
 #navbarLink:hover{color: #FFF; text-decoration: none;}
 #navbarSearchBtn{color: #cfd11a; border-color: #cfd11a;}
 #navbarSearchBtn:hover{background-color: #FFF;}
-#navbarModalBtn{color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
+#navbarSearchBtn:focus, #navbarSearchBtn:active{outline: none; box-shadow: none;}
+#navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
 #navbarModalBtn:hover{background-color: #FFF;}
 #navbarModal{}
-.card{
-  float: left;
-  height: 40rem;
-}
+.jumbotron{text-align: center;}
+.card{float: left; height: 40rem;}
