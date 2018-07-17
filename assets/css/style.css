@@ -1,10 +1,10 @@
 body{padding-top: 80px;}
-#navbarAll{color: black; background-color: #595959;}
+#navbarAll{border-bottom: 1px solid black; color: black; background-color: #595959;}
 @media only screen and (max-width: 768px){[class*="col-"]{width: 100%;}}
 #navbarBurgrBtn{text-align: center; border-color: #cfd11a; background-color: #595959;}
 #navbarBurgrBtn:hover{border-color: #FFF; background-color: #FFF;}
 #navbarLogo{color: #cfd11a;}
-#navbarLogo:hover{color: #FFF;}
+#navbarLogo:hover{color: #f2e9dc;}
 #navbarLink{color: #000; text-decoration: none;}
 #navbarLink:hover{color: #FFF; text-decoration: none;}
 #navbarSearchBtn{color: #cfd11a; border-color: #cfd11a;}
@@ -12,8 +12,12 @@ body{padding-top: 80px;}
 #navbarSearchBtn:focus, #navbarSearchBtn:active{outline: none; box-shadow: none;}
 #navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
 #navbarModalBtn:hover{color: #000; background-color: #FFF;}
-#navbarModal{}
-.jumbotron{text-align: center;}
+#header{border: 1px solid black; height: 200px; width: 100%; margin: 0; padding: 10px; background-image: url('../../assets/img/baniere.png'); background-repeat: no-repeat; background-position: top center;}
+.jumbotron{margin-top: 20px; text-align: center; font-size: 20px;}
+.jumbotron h1{font-size: 50px;}
+#navbarMidAll{color: #595959; background-color: #808f85;}
+#navbarMidLogo{color: #cfd11a;}
+#navbarMidLogo:hover{color: #91c499;}
 .card{float: left; height: 40rem;}
 footer{background-color: #808f85;margin-top: 20px;}
 footer h3{color: #cfd11a; padding-left: 6% ;margin-top: 10px;}

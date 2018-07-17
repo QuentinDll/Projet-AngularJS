@@ -4,14 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/img/iconp.ico" type="image/x-icon"/>
-    <title>Greyphoni</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <script src="assets/js/jquery-3.3.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Greyphoni</title>
   </head>
   <body>
 
@@ -107,17 +103,33 @@
   </div>
   <!-- End modal-->
 
+  <header id="header"></header>
+
   <!-- Start container full page -->
   <div class="container-fluid">
 
-    <!-- Start jumbotron -->
+    <!-- Start container jumbotron navbar mid -->
     <div class="container">
+      <!-- Start jumbotron -->
       <div class="jumbotron">
-        <h1>Bienvenue sur Greyphoni</h1>
-        <p>0000000000000000000000000</p>
+          <h1>Bienvenue sur Greyphoni</h1><br />
+          <p>
+            Greyphoni premier site de vente de smartphone à prix cassé
+          </p>
       </div>
+      <!-- End jumbotron -->
+
+      <!-- Start navbar mid -->
+      <nav class="navbar" id="navbarMidAll">
+        <a class="navbar-brand" id="navbarMidLogo">Smartphone</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarSearchBtn">Search</button>
+        </form>
+      </nav>
+      <!-- End navbar mid -->
     </div>
-    <!-- End jumbotron -->
+    <!-- End container jumbotron navbar mid -->
 
     <!-- Start card article -->
     <div class="container-fluid">
@@ -193,5 +205,9 @@
   </div>
   <!-- End container full page -->
 
+  <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
   </body>
 </html>
