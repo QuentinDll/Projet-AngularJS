@@ -1,5 +1,20 @@
 var app = angular.module('myApp', []);
+<<<<<<< HEAD
 app.controller('cardCtrl', function($scope, $http, $rootScope) {
+=======
+app.controller('myCtrl', function($scope, $http) {
+  $http.get("assets/js/phone.json").then(function (response)
+  {$scope.phones = response.data});
+$scope.changeMarque = function(marque) {
+    $scope.filterChange = marque;
+  };
+  $scope.changeOrder = function(order) {
+        $scope.orderby = order;
+    };
+  });
+
+app.controller('cardCtrl', function($scope, $http) {
+>>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
   $http.get('assets/js/phone.json').then(function (response)
   {$scope.myTable = response.data});
   $rootScope.storeItems = function (table) {
