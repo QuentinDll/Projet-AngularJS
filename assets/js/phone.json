@@ -1,9 +1,9 @@
 [
-  {"marque":"Apple", "modele":"IPhone X Samartphone 4G LTE Advanced 256Go P", "prix":"1516€99", "description":"Super Retina HD, Taille de la diagonale : 5.8\", résolution du capteur : 12 mégapixels, Capacité de la mémoire interne: 258Go, Système d'exploitation : iOS 11", "image":"assets/img/iphoneX.jpg"},
+  {"marque":"apple", "modele":"IPhone X Samartphone 4G LTE Advanced 256Go P", "prix":"1516€99", "description":"Super Retina HD, Taille de la diagonale : 5.8\", résolution du capteur : 12 mégapixels, Capacité de la mémoire interne: 258Go, Système d'exploitation : iOS 11", "image":"assets/img/iphoneX.jpg"},
 
-  {"marque":"Apple", "modele":"IPhone 7 Plus 128 GO Rose Or", "prix":"809€99", "description":"Ecran Retina  HD avec technologie IPS, Tailel de la diagonale : 5.5\", Résolution du capteur : 12 mégapixels, capacité de la mémoir interne : 128 Go, sstème d'exploitation iOS 10", "image":"assets/img/iphone7_rose.jpg"},
+  {"marque":"apple", "modele":"IPhone 7 Plus 128 GO Rose Or", "prix":"809€99", "description":"Ecran Retina  HD avec technologie IPS, Tailel de la diagonale : 5.5\", Résolution du capteur : 12 mégapixels, capacité de la mémoir interne : 128 Go, sstème d'exploitation iOS 10", "image":"assets/img/iphone7_rose.jpg"},
 
-  {"marque":"Apple", "modele":"IPhone 8 64 Go Gris sidéral", "prix":"769€00", "description":"ecran Retina avec technologie IPS, Taille de diagonale : 4.7\", résolution du capteur : 12 mégapixels, Capacité de la mémoire interne : 64 Go, Système d'exploitation : iOS 11", "image":"assets/img/iphone8.jpg"},
+  {"marque":"apple", "modele":"IPhone 8 64 Go Gris sidéral", "prix":"769€00", "description":"ecran Retina avec technologie IPS, Taille de diagonale : 4.7\", résolution du capteur : 12 mégapixels, Capacité de la mémoire interne : 64 Go, Système d'exploitation : iOS 11", "image":"assets/img/iphone8.jpg"},
 
   {"marque":"Samsung", "modele":"Galaxy S9+ Noir Carbone - Double Sim - 6 Go de RAM", "prix":"679€99", "description":"Quad HD+ Super AMOLED, Taille de la diagonale : 6.2\", Résolution du capteur 12 mégapixels, Capacité de la mémoir interne : 64 Go, 8 coeurs, RAM : 6 GO - LPDDR4 SDRAM", "image":"assets/img/galaxyS9+.jpg"},
 
@@ -11,10 +11,10 @@
 
   {"marque":"Samsung", "modele":"Galaxy Note8 Noir Carbone", "prix":"979€00", "description":"Quad HD+ Super AMOLED, Taille de la diagonale : 6.3\", Capacité de la mémoire interne : 64 Go, 8 coeurs, RAM : 6 Go", "image":"assets/img/galaxy_note8.jpg"},
 
-  {"marque":"Huaweï", "modele":"Mate 10 pro 128 Go Midnight blue", "prix":"649€99", "description":"Octa-core Huawei HISilicon Kirin 970 1.8 Ghz, 6 Go de RAM, stockage interne : 128 Go, Résolution du capteur : 20 mégapixels, Capteur frontal : 8 mégapixels", "image":"assets/img/huawei_mate_10.jpg"},
+  {"marque":"Huawei", "modele":"Mate 10 pro 128 Go Midnight blue", "prix":"649€99", "description":"Octa-core Huawei HISilicon Kirin 970 1.8 Ghz, 6 Go de RAM, stockage interne : 128 Go, Résolution du capteur : 20 mégapixels, Capteur frontal : 8 mégapixels", "image":"assets/img/huawei_mate_10.jpg"},
 
-  {"marque":"Huaweï", "modele":"P10 Dual SIM Smartphone Rose", "prix":"569€13", "description":"Octa-core Huawei HISilicon Kirin 960, 4 Go de RAM, Stockage interne : 64 Go, Résolution du capteur : 20 mégapixels, Capteur frontal : 12 mégapixels", "image":"assets/img/huawei_P10_rose.jpg"},
+  {"marque":"Huawei", "modele":"P10 Dual SIM Smartphone Rose", "prix":"569€13", "description":"Octa-core Huawei HISilicon Kirin 960, 4 Go de RAM, Stockage interne : 64 Go, Résolution du capteur : 20 mégapixels, Capteur frontal : 12 mégapixels", "image":"assets/img/huawei_P10_rose.jpg"},
 
-  {"marque":"Huaweï", "modele":"Mate S Titanium Grey", "prix":"546€89", "description":"AMOLED, taille de la diagonale 5.5\", Résolution du capteur : 13 mégapixels, Capacité de la mémoire interne 32 Go, 8 coeurs, RAM 3 Go", "image":"assets/img/huawei_mate_S.jpg"}
+  {"marque":"Huawei", "modele":"Mate S Titanium Grey", "prix":"546€89", "description":"AMOLED, taille de la diagonale 5.5\", Résolution du capteur : 13 mégapixels, Capacité de la mémoire interne 32 Go, 8 coeurs, RAM 3 Go", "image":"assets/img/huawei_mate_S.jpg"}
 
 ]
