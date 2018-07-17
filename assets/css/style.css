@@ -1,5 +1,7 @@
-#navbarAll{color: black; background-color: #595959; z-index: 1;}
-#navbarBurgrBtn{border-color: #cfd11a; background-color: #595959;}
+body{padding-top: 80px;}
+#navbarAll{color: black; background-color: #595959;}
+@media only screen and (max-width: 768px){[class*="col-"]{width: 100%;}}
+#navbarBurgrBtn{text-align: center; border-color: #cfd11a; background-color: #595959;}
 #navbarBurgrBtn:hover{border-color: #FFF; background-color: #FFF;}
 #navbarLogo{color: #cfd11a;}
 #navbarLogo:hover{color: #FFF;}
@@ -11,7 +13,9 @@
 #navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
 #navbarModalBtn:hover{background-color: #FFF;}
 #navbarModal{}
-footer{background-color: #808f85;}
+.jumbotron{text-align: center;}
+.card{float: left; height: 40rem;}
+footer{background-color: #808f85;margin-top: 20px;}
 footer h3{color: #cfd11a; padding-left: 6% ;margin-top: 10px;}
 footer li, a{list-style: none; font-size: 20px; color: #f2e9dc;}
 i{align-items: center; font-size: 40px; margin-left: auto;margin-top: 10px}
