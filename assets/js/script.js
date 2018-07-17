@@ -1,7 +1,13 @@
 var app = angular.module('myApp', []);
-app.controller('cardCtrl', function($scope, $http) {
+app.controller('cardCtrl', function($scope, $http, $rootScope) {
   $http.get('assets/js/phone.json').then(function (response)
   {$scope.myTable = response.data});
+  $rootScope.storeItems = function (table) {
+    $rootScope.marque.push(table.marque);
+    $rootScope.modele.push(table.modele);
+    $rootScope.prix.push(table.prix);
+    $rootScope.image.push(table.image);
+  };
   //récupération des données du tableau phone
 });
 app.run(['$rootScope', function($rootScope) {
@@ -13,19 +19,13 @@ app.run(['$rootScope', function($rootScope) {
 }]);
 //fonction envoyant les données dans le panier (cart)
 app.controller('storeCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
-  $rootScope.store.addItems = function () {
-    $rootScope.marque.push($scope.usermarque);
-    $rootScope.modele.push($scope.usermodele);
-    $rootScope.prix.push($scope.userprix);
-    $rootScope.image.push($scope.userimage);
-    $rootScope.description.push($scope.userdescription);
-  };
+
 }]);
-app.Controller ('storeController' ['$http', function($http){
+/*app.controller('storeCtrl', ['$http', function($http){
   var phone = $http.get('assets/js/phone.json');
   this.product = phone;
   this.totalItems = 0;
-  this.addItems = function() {
+  this.storeItems = function() {
     this.totalItems = this.totalItems + 1;
   };
-}]);
+}]);*/

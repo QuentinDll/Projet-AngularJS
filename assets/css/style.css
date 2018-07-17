@@ -20,6 +20,6 @@ footer h3{color: #cfd11a; padding-left: 6% ;margin-top: 10px;}
 footer li, a{list-style: none; font-size: 20px; color: #f2e9dc;}
 i{align-items: center; font-size: 40px; margin-left: auto;margin-top: 10px}
 .footer-copyright{background-color: #5e6961;}
-button {
-  float: right;
+input {
+ width: 70px;
 }
