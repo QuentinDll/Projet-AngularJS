@@ -8,10 +8,10 @@ body{padding-top: 80px;}
 #navbarLink{color: #000; text-decoration: none;}
 #navbarLink:hover{color: #FFF; text-decoration: none;}
 #navbarSearchBtn{color: #cfd11a; border-color: #cfd11a;}
-#navbarSearchBtn:hover{background-color: #FFF;}
+#navbarSearchBtn:hover{color: #000; background-color: #FFF;}
 #navbarSearchBtn:focus, #navbarSearchBtn:active{outline: none; box-shadow: none;}
 #navbarModalBtn{margin-left: 10px; color: #cfd11a; border-color: #cfd11a; background-color: #595959;}
-#navbarModalBtn:hover{background-color: #FFF;}
+#navbarModalBtn:hover{color: #000; background-color: #FFF;}
 #navbarModal{}
 .jumbotron{text-align: center;}
 .card{float: left; height: 40rem;}
