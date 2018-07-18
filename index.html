@@ -1,123 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/img/iconp.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-<<<<<<< HEAD
-  <title>Greyphoni</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="bootstrapcdnassets/css/style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/img/iconp.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
   <script src="assets/js/jquery-3.3.1.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/phone.json"></script>
+  <title>Greyphoni</title>
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="myCtrl">
+
   <!-- Start nav bar -->
   <nav class="navbar navbar-expand-lg fixed-top" id="navbarAll" >
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarBurgrBtn">
       <span class="navbar-toggler-icon"> ☰ </span>
 
     </button>
-    <a class="navbar-brand" href="#" id="navbarLogo">Greyphoni</a>
+    <a class="navbar-brand" href="#" ng-click="changeMarque('')" id="navbarLogo">Greyphoni</a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navbarLink">Samsung</a>
+          <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Samsung')" id="navbarLink">Samsung</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navbarLink">Apple</a>
+          <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Apple')" id="navbarLink">Apple</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navbarLink">Huawei</a>
+          <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Huawei')" id="navbarLink">Huawei</a>
         </li>
       </ul>
     </div>
-    <!--<form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarSearchBtn">Search</button>
-  </form>
--->
-<a type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#navbarModal" id="navbarModalBtn"><i class="fa fa-shopping-cart"><span class="badge">{{store.totalItems}}</span></a>
-</nav>
-<!-- End nav bar -->
 
-<!-- Start modal -->
-<div ng-controller="storeCtrl">
-  <div name="cart" class="modal" role="dialog" id="navbarModal">
-    <div class="modal-dialog modal-lg">
-      <!-- Start modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title">Mon panier</h1>
-          <button type="button" class="close" data-dismiss="modal">X</button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="row" ng-repeat="(id, element) in prix">
-                <div class="col-lg-2">
-                  <img src="{{image[id]}}" class="img-thumbnail" />
-                </div>
-                <div class="col-lg-2">  <span class="name">{{modele[id]}}  </span>
-                </div>
-                <div class="col-lg-2">
-                  <input  type="number" ng-model="article.quantity" min="0" max="99" required></input>
-                </div>
-                <div class="col-lg-2">
-                  <span class="price">Prix : </span>
-                </div>
-                <div class="col-lg-2">
-                  {{prix[id]}}
-                </div>
-                <div class="col-lg-2">
-                  <button class="trash"><i class="fa fa-trash-o"></i></button>
-=======
-    <script src="assets/js/jquery-3.3.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/phone.json"></script>
-    <title>Greyphoni</title>
-  </head>
-  <body ng-app="myApp" ng-controller="myCtrl">
+    <a type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#navbarModal" id="navbarModalBtn">Panier</a>
+  </nav>
+  <!-- End nav bar -->
 
-    <!-- Start nav bar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbarAll" >
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarBurgrBtn">
-        <span class="navbar-toggler-icon"> ☰ </span>
-
-      </button>
-      <a class="navbar-brand" href="#" ng-click="changeMarque('')" id="navbarLogo">Greyphoni</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Samsung')" id="navbarLink">Samsung</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Apple')" id="navbarLink">Apple</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#navbarMidAll" ng-click="changeMarque('Huawei')" id="navbarLink">Huawei</a>
-          </li>
-        </ul>
-      </div>
-
-      <a type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#navbarModal" id="navbarModalBtn">Panier</a>
-    </nav>
-    <!-- End nav bar -->
-
-    <!-- Start modal -->
-    <div class="modal" role="dialog" id="navbarModal">
-      <div class="modal-dialog">
+  <!-- Start modal -->
+  <div >
+    <div name="cart" class="modal" role="dialog" id="navbarModal">
+      <div class="modal-dialog modal-lg">
         <!-- Start modal content -->
         <div class="modal-content">
           <div class="modal-header">
@@ -126,25 +55,23 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-lg-12">
-                <div class="row">
+              <div class="col-lg-12" ng-controller="storeCtrl">
+                <div class="row" ng-repeat="(id, element) in prix">
                   <div class="col-lg-2">
-                    <img src="{{immage}}" class="img-thumbnail" />
+                    <img src="{{image[id]}}" class="img-thumbnail" />
+                  </div>
+                  <div class="col-lg-2">  <span class="name">{{modele[id]}}  </span>
                   </div>
                   <div class="col-lg-2">
-                    <input class="number"/>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <button class="increase">+</button>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <button class="decrease">-</button>
-                      </div>
-                    </div>
+                    <form class="form" action="index.html" method="post">
+
+                    <select ng-model="qte" name="qte">
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </form>
                   </div>
                   <div class="col-lg-2">
                     <span class="price">Prix : </span>
@@ -153,178 +80,117 @@
                     {{prix}}
                   </div>
                   <div class="col-lg-2">
-                    <button class="trash"><i class="fa fa-trash-o"></i></button>
+                    <button class="fa fa-trash-o" ng-model="deletePhone(phone)" name="empty"></button>
                   </div>
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <span class="total">Total : </span>
-                </div>
-                <div class="col-lg-6">
-                  <span>{{total}}</span>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <span class="total">Total : </span>
+                  </div>
+                  <div class="col-lg-6">
+                    <span></span>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- End modal content -->
           </div>
-<<<<<<< HEAD
-=======
-
           <!-- End modal content -->
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Oui</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Valider</button>
           </div>
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
-        </div>
-        <!-- End modal content -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Valider</button>
+          <!-- End modal content -->
         </div>
       </div>
-      <!-- End modal content -->
-    </div>
-<<<<<<< HEAD
-  </div>
-</div>
-<!-- End modal-->
-
-<!-- Start container full page -->
-<div class="container-fluid">
-
-  <!-- Start jumbotron -->
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Bienvenue sur Greyphoni</h1>
-      <p>0000000000000000000000000</p>
     </div>
   </div>
-  <!-- End jumbotron -->
+  <!-- End modal-->
 
-  <!-- Start card article -->
+  <header id="header"></header>
+
+  <!-- Start container full page -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <!-- accés au json -->
-        <div ng-controller="cardCtrl">
-          <div class="card" style="width:18rem;" ng-repeat="table in myTable">
-            <img name="image" ng-model="image" class="image card-img-top" src={{table.image}}>
-            <div class="card-body">
-              <div name="marque" ng-model="marque" class="card-title">{{table.marque}}</div>
-              <div name="model" ng-model="modele" class="card-title">{{table.modele}}</div>
-              <td name="prix">{{table.prix}}</td>
-              <p ng-model="description" name="description" class="card-text">{{table.description}}</p>
-              <button type="button" class="btn btn-primary" ng-click="storeItems(table)">Ajouter au panier</a>
-              
-=======
-    <!-- End modal-->
 
-    <header id="header"></header>
-
-    <!-- Start container full page -->
-    <div class="container-fluid">
-
-      <!-- Start container jumbotron navbar mid -->
-      <div class="container">
-        <!-- Start jumbotron -->
-        <div class="jumbotron">
-          <h1>Bienvenue sur Greyphoni</h1><br />
-          <p>
-            Greyphoni premier site de vente de smartphone à prix cassé
-          </p>
-        </div>
-        <!-- End jumbotron -->
-
-        <!-- Start navbar mid -->
-        <nav class="navbar" id="navbarMidAll">
-          <a class="navbar-brand" id="navbarMidLogo">Smartphone</a>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="navbarSearchBtn">Search</button>
-          </form>
-        </nav>
-        <!-- End navbar mid -->
+    <!-- Start container jumbotron navbar mid -->
+    <div class="container">
+      <!-- Start jumbotron -->
+      <div class="jumbotron">
+        <h1>Bienvenue sur Greyphoni</h1><br />
+        <p>
+          Greyphoni premier site de vente de smartphone à prix cassé
+        </p>
       </div>
-      <!-- End container jumbotron navbar mid -->
+      <!-- End jumbotron -->
 
-      <!-- Start card article -->
-      <div class="">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <!-- accés au json -->
-              <div>
-                <div class="card" style="width:18rem;" ng-repeat="phone in phones | orderBy : orderby | filter : {marque:filterChange}  track by $index">
-                  <img class="card-img-top" src={{phone.image}}>
-                  <div class="card-body">
-                    <div class="card-title">{{phone.marque}}</div>
-                    <div class="card-title">{{phone.modele}}</div>
-                    <div>{{phone.prix}}</div>
-                    <p class="card-text">{{phone.description}}</p>
-                    <a href="#" class="btn btn-primary">Panier</a>
-                  </div>
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
-                </div>
+
+    </div>
+    <!-- End container jumbotron navbar mid -->
+
+    <!-- Start card article -->
+    <div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12" ng-controller="cardCtrl">
+            <!-- accés au json -->
+            <div >
+              <div class="card" style="width:18rem;" ng-repeat="phone in phones | orderBy : orderby | filter : {marque:filterChange}  track by $index">
+                <img ng-model'image' class="card-img-top" src={{phone.image}}>
+                <div class="card-body">
+                  <div ng-model="marque" class="card-title">{{phone.marque}}</div>
+                  <div ng-model="modele" class="card-title">{{phone.modele}}</div>
+                  <div ng-model="prix">{{phone.prix}}</div>
+                  <p ng-model="description" class="card-text">{{phone.description}}</p>
+                <button class="btn btn-primary" ng-click="storeItems(phone)">Ajouter au panier</button>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
-      <!-- Start footer -->
-      <footer>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <h3>Produits</h3>
-            <ul>
-              <li><a href="https://www.apple.com/fr/">apple</a></li>
-              <li><a href="https://consumer.huawei.com/fr/">huawei</a></li>
-              <li><a href="https://www.samsung.com/fr/">samsung</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <h3>Nous contacter</h3>
-            <ul>
-              <li><i class="fas fa-building"></i> les amelots,18260 ASSIGNY</li>
-              <li><i class="fas fa-phone"></i> 02-48-73-83-09</li>
-              <li><i class="fas fa-envelope"></i> Greyphoni@gmail.com</li>
-            </ul>
-          </div>
-          <ul>
-            <div class="col-sm-12 col-md-6 col-lg-2">
-              <li>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-snapchat-ghost"></i>
-              </li>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-2">
-              <li>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="footer-copyright text-center py-3">© 1522 Copyright:
-          <a href="#"> Greyphoni</a>
-        </div>
-      </footer>
-      <!-- End footer -->
-
-<<<<<<< HEAD
-      <!-- End card article -->
-=======
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
     </div>
-    <!-- End container full page -->
+  </div>
 
-  </body>
-<<<<<<< HEAD
-  </html>
-=======
+  <!-- Start footer -->
+  <footer>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <h3>Produits</h3>
+        <ul>
+          <li><a href="https://www.apple.com/fr/">apple</a></li>
+          <li><a href="https://consumer.huawei.com/fr/">huawei</a></li>
+          <li><a href="https://www.samsung.com/fr/">samsung</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <h3>Nous contacter</h3>
+        <ul>
+          <li><i class="fas fa-building"></i> les amelots,18260 ASSIGNY</li>
+          <li><i class="fas fa-phone"></i> 02-48-73-83-09</li>
+          <li><i class="fas fa-envelope"></i> Greyphoni@gmail.com</li>
+        </ul>
+      </div>
+      <ul>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <li>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-snapchat-ghost"></i>
+          </li>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <li>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="footer-copyright text-center py-3">© 1522 Copyright:
+      <a href="#"> Greyphoni</a>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+</div>
+<!-- End container full page -->
+
+</body>
 </html>
->>>>>>> 5322f00a8f39400ff368d2f93ed9a3a3af3ce5d7
